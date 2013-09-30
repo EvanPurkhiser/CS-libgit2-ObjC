@@ -29,18 +29,18 @@
 /**
  * Initialization a empty repository objective
  */
-+ (Repository *)init;
++ (Repository *)init:(NSString *)location;
 
 /**
  * Initialize a repository from a specific git URL
  */
-+ (Repository *)clone:(NSString *)url;
++ (Repository *)clone:(NSString *)location RepositoryUrl:(NSString *)url;
 
 @end
 
 @implementation Repository
 
-+ (Repository *)init
++ (Repository *)init:(NSString *)location
 {
 	Repository *repo  = [super init];
 
@@ -49,7 +49,7 @@
 	return repo;
 }
 
-+ (Repository *)clone:(NSString *)url
++ (Repository *)clone:(NSString *)location RepositoryUrl:(NSString *)url
 {
 	Repository *repo  = [super init];
 
