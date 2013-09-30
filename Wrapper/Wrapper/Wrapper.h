@@ -36,6 +36,14 @@
  */
 + (Repository *)clone:(NSString *)location RepositoryUrl:(NSString *)url;
 
+/**
+ * Add a file to the staging area of our repository
+ *
+ * @param filePath The absolute path to the file to add to the repositories
+ *                 staging area
+ */
+- (Repository *)addFile:(NSString *)filePath;
+
 @end
 
 @implementation Repository
@@ -44,7 +52,7 @@
 {
 	Repository *repo  = [super init];
 
-	// Do empty repository initialization on repo here
+	// Do empty repository initialization on repo
 
 	return repo;
 }
@@ -53,9 +61,17 @@
 {
 	Repository *repo  = [super init];
 
-	// Do repository initialization from URL on repo here
+	// Do repository initialization from URL on repo
 
 	return repo;
 }
+
+- (Repository *)addFile:(NSString *)filePath
+{
+	// Add the file to the repository
+
+	return self;
+}
+
 
 @end
