@@ -27,4 +27,11 @@
 	return self;
 }
 
+- (Repository *)resetIndex
+{
+	// Reset the staging area of the repository
+
+	return self;
+}
+
 @end

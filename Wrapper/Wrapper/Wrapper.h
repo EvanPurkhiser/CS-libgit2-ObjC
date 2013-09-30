@@ -55,4 +55,9 @@
  */
 - (Repository *)addFile:(NSString *)filePath;
 
+/**
+ * Reset the staging area off the current repository
+ */
+- (Repository *)resetIndex;
+
 @end
