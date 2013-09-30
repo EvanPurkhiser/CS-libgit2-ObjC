@@ -34,7 +34,7 @@
 /**
  * Initialize a repository from a specific git URL
  */
-+ (Repository *)init:(NSString *)url;
++ (Repository *)clone:(NSString *)url;
 
 @end
 
@@ -49,7 +49,7 @@
 	return repo;
 }
 
-+ (Repository *)init:(NSString *)url
++ (Repository *)clone:(NSString *)url
 {
 	Repository *repo  = [super init];
 
