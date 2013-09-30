@@ -50,7 +50,8 @@
  * Add a file to the staging area of our repository
  *
  * @param filePath The absolute path to the file to add to the repositories
- *                 staging area
+ *                 staging area. May also be a relative path from the root
+ *                 of the root of the repository
  */
 - (Repository *)addFile:(NSString *)filePath;
 
