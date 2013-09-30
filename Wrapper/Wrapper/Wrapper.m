@@ -20,6 +20,11 @@
 	return repo;
 }
 
+- (NSDictionary *)filesStatus
+{
+	return 0;
+}
+
 - (Repository *)addFile:(NSString *)filePath
 {
 	// Add the file to the repository
