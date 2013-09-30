@@ -17,12 +17,15 @@
  * Currently this library will allow you to do the following:
  *
  * - Initialize a empty repository or a repository from a URI
+ * - Show the status of files in the repository, agnostic to `git status`
  * - Add changed files to the staging area
  * - Reset the staging area
  * - Commit the files currently in the staging area
  * - Get a listing of commits from the current HEAD
  * - View information about the particular commit
  */
+
+#import <Foundation/Foundation.h>
 
 @interface Repository:NSObject
 
@@ -37,41 +40,18 @@
 + (Repository *)clone:(NSString *)location RepositoryUrl:(NSString *)url;
 
 /**
+ * Get the status of the files in the git repository. This will return a map
+ * where the key represents the status of the file [1] and the value is a array
+ * of absolute file pahs.
+ */
+- (NSDictionary *)filesStatus;
+
+/**
  * Add a file to the staging area of our repository
  *
  * @param filePath The absolute path to the file to add to the repositories
  *                 staging area
  */
 - (Repository *)addFile:(NSString *)filePath;
-
-@end
-
-@implementation Repository
-
-+ (Repository *)init:(NSString *)location
-{
-	Repository *repo  = [super init];
-
-	// Do empty repository initialization on repo
-
-	return repo;
-}
-
-+ (Repository *)clone:(NSString *)location RepositoryUrl:(NSString *)url
-{
-	Repository *repo  = [super init];
-
-	// Do repository initialization from URL on repo
-
-	return repo;
-}
-
-- (Repository *)addFile:(NSString *)filePath
-{
-	// Add the file to the repository
-
-	return self;
-}
-
 
 @end
