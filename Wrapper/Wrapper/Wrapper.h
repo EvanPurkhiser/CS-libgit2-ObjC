@@ -23,3 +23,39 @@
  * - Get a listing of commits from the current HEAD
  * - View information about the particular commit
  */
+
+@interface Repository:NSObject
+
+/**
+ * Initialization a empty repository objective
+ */
++ (Repository *)init;
+
+/**
+ * Initialize a repository from a specific git URL
+ */
++ (Repository *)init:(NSString *)url;
+
+@end
+
+@implementation Repository
+
++ (Repository *)init
+{
+	Repository *repo  = [super init];
+
+	// Do empty repository initialization on repo here
+
+	return repo;
+}
+
++ (Repository *)init:(NSString *)url
+{
+	Repository *repo  = [super init];
+
+	// Do repository initialization from URL on repo here
+
+	return repo;
+}
+
+@end
