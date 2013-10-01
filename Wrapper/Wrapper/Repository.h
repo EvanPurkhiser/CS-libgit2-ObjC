@@ -35,7 +35,7 @@
 /**
  * Initialization a empty repository objective
  */
-+ (Repository *)init:(NSString *)location;
++ (id)init:(NSString *)location;
 
 /**
  * Initialize a repository from a specific git URL
@@ -43,7 +43,7 @@
  * @param location      The absolute path to store clone the repository into
  * @param repositoryUrl The URL of the remote repository to clone
  */
-+ (Repository *)clone:(NSString *)location RepositoryUrl:(NSString *)url;
++ (id)clone:(NSString *)location RepositoryUrl:(NSString *)url;
 
 /**
  * Get a status object for this repository
@@ -57,11 +57,11 @@
  *                 staging area. May also be a relative path from the root
  *                 of the root of the repository
  */
-- (Repository *)stageFile:(NSString *)filePath;
+- (id)stageFile:(NSString *)filePath;
 
 /**
  * Reset the staging area off the current repository
  */
-- (Repository *)resetIndex;
+- (id)resetIndex;
 
 @end

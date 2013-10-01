@@ -2,7 +2,7 @@
 
 @implementation Repository
 
-+ (Repository *)init:(NSString *)location
++ (id)init:(NSString *)location
 {
 	Repository *repo  = [super init];
 
@@ -11,7 +11,7 @@
 	return repo;
 }
 
-+ (Repository *)clone:(NSString *)location RepositoryUrl:(NSString *)url
++ (id)clone:(NSString *)location RepositoryUrl:(NSString *)url
 {
 	Repository *repo  = [super init];
 
@@ -25,14 +25,14 @@
 	return 0;
 }
 
-- (Repository *)stageFile:(NSString *)filePath
+- (id)stageFile:(NSString *)filePath
 {
 	// Add the file to the repository
 
 	return self;
 }
 
-- (Repository *)resetIndex
+- (id)resetIndex
 {
 	// Reset the staging area of the repository
 
