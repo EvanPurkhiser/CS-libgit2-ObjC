@@ -58,11 +58,11 @@
     return [Commit init];
 }
 
-- (id)addToIndex:(NSString *)filePath
+- (NSArray *)changedFiles
 {
-	// Add the file into the staging area
+	// Get a list of changed files and push them into a NSArray
 
-	return self;
+	return [NSArray init];
 }
 
 - (id)resetIndex

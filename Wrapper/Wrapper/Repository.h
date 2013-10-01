@@ -8,11 +8,12 @@
  * not add any functionality, in fact it's actually missing a lot of functionality.
  *
  * This library allows for very basic usage of git within an Objective-C
- * application. There are two objects we will be dealing with when using this
+ * application. There are three objects we will be dealing with when using this
  * library:
  *
  * 1. Repository: This represents a single git repository.
  * 2. Commit: This represents a single commit within a single repository
+ * 3. Files: This reprents a single file in the tree
  *
  * Currently this library will allow you to do the following:
  *
@@ -27,10 +28,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "RepositoryStatus.h"
 #import "Commit.h"
-
-@class RepositoryStatus;
 
 @interface Repository : NSObject
 
@@ -78,18 +76,16 @@
 - (Commit *)head;
 
 /**
- * Add a file to the staging area of our repository
- *
- * @param filePath The absolute path to the file to add to the repositories
- *                 staging area. May also be a relative path from the root
- *                 of the root of the repository
+ * Get a list of all files that differ from their counterpart in
+ * the HEAD
  */
-- (id)addToIndex:(NSString *)filePath;
+- (NSArray *)changedFiles;
 
 /**
  * Reset the staging area off the current repository
  */
 - (id)resetIndex;
+
 
 /**
  * Commit the currently staged files in the repository with the given message.
