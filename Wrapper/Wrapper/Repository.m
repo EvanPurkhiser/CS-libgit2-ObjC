@@ -20,9 +20,42 @@
 	return repo;
 }
 
-- (RepositoryStatus *)status
+- (NSString *)currentBranchName
 {
-	return 0;
+    // Get the name of the currently checked out branch
+
+    return @"master";
+}
+
+- (NSDictionary *)branches
+{
+    // Get the list of branches and their Commit objects and
+    // push them into the NSDictionary, where the key is the
+    // branch name, and value is the Commit object
+
+    return [NSDictionary init];
+}
+
+- (id)checkoutCommit:(Commit *)commit
+{
+    // Checkout the current Commit object
+
+    return self;
+}
+
+- (NSArray *)history
+{
+    // Get the repository history and setup the Commit objects
+    // and push them into a NSArray object
+
+    return [NSArray init];
+}
+
+- (Commit *)head
+{
+    // Setup the commit from the current head
+
+    return [Commit init];
 }
 
 - (id)stageFile:(NSString *)filePath
@@ -43,7 +76,7 @@
 {
     // Commit staged changes to repository and return latest commit
 
-    return 0;
+    return [Commit init];
 }
 
 @end

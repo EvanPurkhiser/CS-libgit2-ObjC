@@ -23,6 +23,7 @@
  * - Commit the files currently in the staging area
  * - Get a listing of commits from the current HEAD
  * - View information about the particular commit
+ * - See a list of branches and checkout branches
  */
 
 #import <Foundation/Foundation.h>
@@ -47,9 +48,34 @@
 + (id)clone:(NSString *)location RepositoryUrl:(NSString *)url;
 
 /**
- * Get a status object for this repository
+ * Get the name of the currently checked out branch
  */
-- (RepositoryStatus *)status;
+- (NSString *)currentBranchName;
+
+/**
+ * Get the listing of branche refs that exist on this repository. this will
+ * return a NSDictionary where the key is the name of the branch and the
+ * value is a Commit object representing the tip of that branch
+ */
+- (NSDictionary *)branches;
+
+/**
+ * Checkout the particular commit
+ *
+ * @param commit The commit object to checkout
+ */
+- (id)checkoutCommit:(Commit *)commit;
+
+/**
+ * Gets the repository history from the current HEAD until the first commit
+ * with no parent
+ */
+- (NSArray *)history;
+
+/**
+ * Get the commit object for the currently checked out commit
+ */
+- (Commit *)head;
 
 /**
  * Add a file to the staging area of our repository
