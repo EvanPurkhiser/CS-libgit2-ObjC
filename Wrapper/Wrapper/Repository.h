@@ -39,6 +39,9 @@
 
 /**
  * Initialize a repository from a specific git URL
+ *
+ * @param location      The absolute path to store clone the repository into
+ * @param repositoryUrl The URL of the remote repository to clone
  */
 + (Repository *)clone:(NSString *)location RepositoryUrl:(NSString *)url;
 

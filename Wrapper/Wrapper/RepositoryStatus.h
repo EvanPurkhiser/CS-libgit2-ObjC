@@ -8,6 +8,8 @@
 
 /**
  * Construct the status object from a repository
+ *
+ * @param repository The repository to get the status of
  */
 - (id)init:(Repository *)repository;
 
@@ -23,6 +25,9 @@
 
 /**
  * Get the status of a particular file in the repository
+ *
+ * @param filePath The absolute (or repository relative) path to a
+ *                 file that you would like to know the status of
  */
 - (FileStatus *)ofFile:(NSString *)filePath;
 
