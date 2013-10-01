@@ -1,4 +1,4 @@
-#include "Wrapper.h"
+#import "Repository.h"
 
 @implementation Repository
 
@@ -20,12 +20,12 @@
 	return repo;
 }
 
-- (NSDictionary *)filesStatus
+- (NSDictionary *)fileStatus
 {
 	return 0;
 }
 
-- (Repository *)addFile:(NSString *)filePath
+- (Repository *)stageFile:(NSString *)filePath
 {
 	// Add the file to the repository
 
