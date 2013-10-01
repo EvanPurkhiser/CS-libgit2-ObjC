@@ -58,9 +58,9 @@
     return [Commit init];
 }
 
-- (id)stageFile:(NSString *)filePath
+- (id)addToIndex:(NSString *)filePath
 {
-	// Add the file to the repository
+	// Add the file into the staging area
 
 	return self;
 }

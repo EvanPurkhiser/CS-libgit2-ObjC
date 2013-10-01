@@ -84,7 +84,7 @@
  *                 staging area. May also be a relative path from the root
  *                 of the root of the repository
  */
-- (id)stageFile:(NSString *)filePath;
+- (id)addToIndex:(NSString *)filePath;
 
 /**
  * Reset the staging area off the current repository
