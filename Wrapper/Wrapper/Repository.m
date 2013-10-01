@@ -39,4 +39,11 @@
 	return self;
 }
 
+- (Commit *)commit:(NSString *)message
+{
+    // Commit staged changes to repository and return latest commit
+
+    return 0;
+}
+
 @end

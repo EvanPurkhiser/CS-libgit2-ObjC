@@ -27,6 +27,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RepositoryStatus.h"
+#import "Commit.h"
 
 @class RepositoryStatus;
 
@@ -63,5 +64,13 @@
  * Reset the staging area off the current repository
  */
 - (id)resetIndex;
+
+/**
+ * Commit the currently staged files in the repository with the given message.
+ * This will return the newly created Commit object
+ *
+ * @param message The commit message to commit with
+ */
+- (Commit *) commit:(NSString *)message;
 
 @end

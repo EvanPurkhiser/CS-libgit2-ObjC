@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2078D2FE17FAAEF00079EC36 /* Commit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2078D2FD17FAAEF00079EC36 /* Commit.m */; };
 		20DBDB0817FAA0DD00A64938 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBDB0717FAA0DD00A64938 /* Repository.m */; };
 		20DBDB0B17FAA11500A64938 /* RepositoryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBDB0A17FAA11500A64938 /* RepositoryStatus.m */; };
 		20DBDB1217FAA71800A64938 /* FileStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBDB1117FAA71800A64938 /* FileStatus.m */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2078D2FC17FAAEF00079EC36 /* Commit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commit.h; sourceTree = "<group>"; };
+		2078D2FD17FAAEF00079EC36 /* Commit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commit.m; sourceTree = "<group>"; };
 		20DBDB0617FAA0DD00A64938 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
 		20DBDB0717FAA0DD00A64938 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
 		20DBDB0917FAA11500A64938 /* RepositoryStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryStatus.h; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				8805F3E517E7712200705B8E /* Supporting Files */,
 				20DBDB0917FAA11500A64938 /* RepositoryStatus.h */,
 				20DBDB0A17FAA11500A64938 /* RepositoryStatus.m */,
+				2078D2FC17FAAEF00079EC36 /* Commit.h */,
+				2078D2FD17FAAEF00079EC36 /* Commit.m */,
 			);
 			path = Wrapper;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				20DBDB0B17FAA11500A64938 /* RepositoryStatus.m in Sources */,
 				20DBDB0817FAA0DD00A64938 /* Repository.m in Sources */,
 				20DBDB1217FAA71800A64938 /* FileStatus.m in Sources */,
+				2078D2FE17FAAEF00079EC36 /* Commit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
