@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		20DBDB0817FAA0DD00A64938 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBDB0717FAA0DD00A64938 /* Repository.m */; };
+		20DBDB0B17FAA11500A64938 /* RepositoryStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBDB0A17FAA11500A64938 /* RepositoryStatus.m */; };
+		20DBDB1217FAA71800A64938 /* FileStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DBDB1117FAA71800A64938 /* FileStatus.m */; };
 		8805F3E117E7712200705B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8805F3E017E7712200705B8E /* Foundation.framework */; };
 		8805F3E417E7712200705B8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8805F3E317E7712200705B8E /* main.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +29,10 @@
 /* Begin PBXFileReference section */
 		20DBDB0617FAA0DD00A64938 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
 		20DBDB0717FAA0DD00A64938 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		20DBDB0917FAA11500A64938 /* RepositoryStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryStatus.h; sourceTree = "<group>"; };
+		20DBDB0A17FAA11500A64938 /* RepositoryStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryStatus.m; sourceTree = "<group>"; };
+		20DBDB1017FAA71800A64938 /* FileStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileStatus.h; sourceTree = "<group>"; };
+		20DBDB1117FAA71800A64938 /* FileStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileStatus.m; sourceTree = "<group>"; };
 		8805F3DD17E7712200705B8E /* Wrapper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Wrapper; sourceTree = BUILT_PRODUCTS_DIR; };
 		8805F3E017E7712200705B8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8805F3E317E7712200705B8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,10 +79,14 @@
 		8805F3E217E7712200705B8E /* Wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				20DBDB1017FAA71800A64938 /* FileStatus.h */,
+				20DBDB1117FAA71800A64938 /* FileStatus.m */,
 				8805F3E317E7712200705B8E /* main.m */,
 				20DBDB0617FAA0DD00A64938 /* Repository.h */,
 				20DBDB0717FAA0DD00A64938 /* Repository.m */,
 				8805F3E517E7712200705B8E /* Supporting Files */,
+				20DBDB0917FAA11500A64938 /* RepositoryStatus.h */,
+				20DBDB0A17FAA11500A64938 /* RepositoryStatus.m */,
 			);
 			path = Wrapper;
 			sourceTree = "<group>";
@@ -141,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8805F3E417E7712200705B8E /* main.m in Sources */,
+				20DBDB0B17FAA11500A64938 /* RepositoryStatus.m in Sources */,
 				20DBDB0817FAA0DD00A64938 /* Repository.m in Sources */,
+				20DBDB1217FAA71800A64938 /* FileStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

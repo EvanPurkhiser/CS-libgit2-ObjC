@@ -1,4 +1,7 @@
 #import <Foundation/Foundation.h>
+#import "RepositoryStatus.h"
+
+@class RepositoryStatus;
 
 @interface Repository : NSObject
 
@@ -15,7 +18,7 @@
 /**
  * Get a status object for this repository
  */
-- (NSDictionary *)fileStatus;
+- (RepositoryStatus *)status;
 
 /**
  * Add a file to the staging area of our repository

@@ -20,7 +20,7 @@
 	return repo;
 }
 
-- (NSDictionary *)fileStatus
+- (RepositoryStatus *)status
 {
 	return 0;
 }
